@@ -44,8 +44,7 @@ char *peek(Stack *S) {
 
 	} else {
 
-		const char *element = S->elements[S->size -1];
-		return element;
+		return S->elements[S->size - 1];
 
 	}
 }
