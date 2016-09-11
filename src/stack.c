@@ -23,7 +23,6 @@ char *pop(Stack *S) {
 
 	if(S->size == 0) {
 
-		printf("Stack is empty\n");
 		return NULL;
 
 	} else {
@@ -40,7 +39,6 @@ char *peek(Stack *S) {
 
 	if(S->size == 0) {
 
-		printf("Stack is empty\n");
 		return NULL;
 
 	} else {
@@ -54,7 +52,6 @@ int push(Stack *S, char *element) {
 	
 	if (S->size == CAPACITY) {
 
-		printf("Stack is full\n");
 		return -1;
 
 	} else {
