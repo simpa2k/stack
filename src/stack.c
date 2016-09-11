@@ -48,6 +48,10 @@ char *peek(Stack *S) {
 	}
 }
 
+int getSize(Stack *S) {
+    return S->size;
+}
+
 int push(Stack *S, char *element) {
 	
 	if (S->size == CAPACITY) {
