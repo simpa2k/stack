@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "stack.h"
 
 #define CAPACITY 10
 
@@ -27,7 +28,7 @@ char *pop(Stack *S) {
 
 	} else {
 
-		char * element = S->elements[S->size - 1];
+		char *element = S->elements[S->size - 1];
 		S->size--;
 
 		return element;
